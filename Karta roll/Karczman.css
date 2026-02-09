@@ -23,7 +23,7 @@ html {
 .background-wrap{
     
     box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-    background: #fffef0;
+    background: #adada5;
     padding: 5px;
     margin: -10px !important;
     min-width: 1530px;;
@@ -310,7 +310,8 @@ div.roll-buttons + hr.dotted-line {
     border-image-slice: 30 30 30 30;
     border-image-width: 13px;
     border-image-repeat: round repeat;
-    border-image-source: url("https://github.com/timek3/RollCustom/blob/main/border.png?raw=true");
+    /* border-image-source: url("https://github.com/timek3/RollCustom/blob/main/border.png?raw=true"); */
+    background-color: #e8ddcf;
     border-radius: 5px;
     padding: 16px 16px 24px;
     line-height: 24px;
