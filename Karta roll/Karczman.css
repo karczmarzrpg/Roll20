@@ -37,7 +37,7 @@ input.tab-sheet[value="Xeno"] ~ .background-wrap {
     background-repeat: repeat;
 }
 .header-image{
-    background-image: url("https://github.com/karczmarzrpg/Roll20/blob/main/Gothic/Background.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/karczmarzrpg/Roll20/refs/heads/main/Gothic/Background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -2055,7 +2055,7 @@ label.darker-rounded-box {
     width: fit-content;
     /* background-color: rgb(185, 218, 193); */
     background-color: #301504; 
-    color: rgb(61, 27, 13);
+    color: white;
     border-radius: 6px;
     clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px);
     border: 0;
@@ -2077,7 +2077,7 @@ label.darker-rounded-box {
     margin-bottom: 1px;
     margin: 0px 0px 0px 0px;
     font-family: 'Roboto';
-    color: rgb(61, 27, 13);
+    color: white;
     /* background-color: #301504;  */
     border: 0;
     border-radius: 6px;
@@ -2093,7 +2093,7 @@ label.darker-rounded-box {
     text-align: center;
 }
 .darker-rounded-box select option {
-    color: rgb(61, 27, 13);
+    color: white;
     background-color: #301504; 
 
 }
@@ -2967,7 +2967,7 @@ input[type="checkbox"].button-skill:checked label {
 
 .sheet-template-xeno .sheet-template-background,
 .sheet-rolltemplate-alien .sheet-template-background {
-    background: url(https://github.com/karczmarzrpg/Roll20/blob/main/Gothic/Background.png?raw=true);
+    background: url(https://raw.githubusercontent.com/karczmarzrpg/Roll20/refs/heads/main/Gothic/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -3152,7 +3152,7 @@ input[type="checkbox"].button-skill:checked label {
 .sheet-rolltemplate-aliens .sheet-base-dice span.inlinerollresult.fullcrit {
     height: 35px;
     width: 35px;
-    background-image: url("https://github.com/karczmarzrpg/Roll20/blob/main/Gothic/Dice_success.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/karczmarzrpg/Roll20/refs/heads/main/Gothic/Dice_success.png");
     background-size: 100% 100%;
 }
 
@@ -3169,7 +3169,7 @@ input[type="checkbox"].button-skill:checked label {
 .sheet-rolltemplate-aliens .sheet-supply-dice span.inlinerollresult.fullfail {
     height: 35px;
     width: 35px;
-    background-image: url("https://github.com/karczmarzrpg/Roll20/blob/main/Gothic/Dice_adrenaline_fumble.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/karczmarzrpg/Roll20/refs/heads/main/Gothic/Dice_adrenaline_fumble.png");
     background-size: 100% 100%;
 }
 
@@ -3177,7 +3177,7 @@ input[type="checkbox"].button-skill:checked label {
 .sheet-rolltemplate-aliens .sheet-stress-dice span.inlinerollresult.fullcrit {
     height: 35px;
     width: 35px;
-    background-image: url("https://github.com/karczmarzrpg/Roll20/blob/main/Gothic/Dice_adrenaline_success.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/karczmarzrpg/Roll20/refs/heads/main/Gothic/Dice_adrenaline_success.png");
     background-size: 100% 100%;
 }
 
