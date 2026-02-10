@@ -23,7 +23,8 @@ html {
 .background-wrap{
     
     box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-    background: #adada5;
+    /* background: #adada5; */
+    background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/back.jpg");
     padding: 5px;
     margin: -10px !important;
     min-width: 1530px;;
@@ -306,12 +307,13 @@ div.roll-buttons + hr.dotted-line {
 .marg-right {margin-right: 3px;}
 
 .grid-item {
-    
-    border-image-slice: 30 30 30 30;
-    border-image-width: 13px;
-    border-image-repeat: round repeat;
-    /* border-image-source: url("https://github.com/timek3/RollCustom/blob/main/border.png?raw=true"); */
-    background-color: #e8ddcf;
+    border-image-slice: 13 13 13 13;
+    border-image-width: 8px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("https://raw.githubusercontent.com/karczmarzrpg/Roll20/refs/heads/main/border.png");
+    border-style: solid;
+    background-color: rgba(235, 232, 227, 0.8);
     border-radius: 5px;
     padding: 16px 16px 24px;
     line-height: 24px;
@@ -2836,10 +2838,15 @@ input[type="checkbox"].button-skill:checked label {
 .attribute-box {
     display: flex;
     align-content: center;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     justify-items: center;
     height: -webkit-fill-available;
+    padding-top: 8px;
+    span {
+        font-size: 2em;
+        line-height: 1em;
+    }
 }
 .attribute-strength-box {
     position: relative;
