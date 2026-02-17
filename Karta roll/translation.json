@@ -195,5 +195,6 @@
 	"roll": "Rzut",
 	"stress": "Adrenalina",
 	"token-init-abbr-u": "Inic. żetonu",
-	"modifierquery-u": "Mod. rzutów"
+	"modifierquery-u": "Mod. rzutów",
+    "template-base-damage": "Bazowe obrażenia"
 }
