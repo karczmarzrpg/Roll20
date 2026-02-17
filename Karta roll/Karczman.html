@@ -34,12 +34,12 @@
         <div class="header-tabs floating-header span-one-thru-five span-row1">
 <!--             <button type="action" class="action-tab" data-i18n="character" name="act_tab_character" title="Character">Character</button>
             <button type="action" class="action-tab" data-i18n="ship" name="act_tab_ship" title="Ship">Ship</button>   -->     
-            <div class="skinny-div flex-row">
+            <!-- <div class="skinny-div flex-row">
                 <button type="action" name="act_tab_character" class="action-tab w150 shift-down-17 darkest-teal-header ship-header ship-header-name flex-self-center flex-content-center" value="Character" data-i18n="character">Character</button>
                 <button type="action" name="act_tab_xeno" class="action-tab w150 shift-down-17 darkest-teal-header ship-header ship-header-name flex-self-center flex-content-center" value="Xeno" data-i18n="hostile">Hostile</button>
                 <input type="checkbox" name="attr_config_notice" class="config-notice" value="1" hidden />
                 <button type="action" name="act_tab_config" class="action-tab w40 shift-down-17 darkest-teal-header ship-header ship-header-name flex-self-center flex-content-center" value="Config">y</button>
-            </div>
+            </div> -->
             <!-- <input type="radio" class="tab tab-char ship " name="attr_tab_sheet" value="Character" checked="checked"/>
             <input type="radio" class="tab tab-ship character" name="attr_tab_sheet" value="Ship" /> -->
         </div>
@@ -1335,7 +1335,7 @@
                     <button type="roll" class="button-skill button-beta panicdesc" value="@{roll_command} &{template:alien} {{character-name=@{character_name} }} {{roll-name=Panic Roll }} {{roll-dice=[[ 1d6 + @{stress} + @{steelnerves} [ Stress ] ]] }}" name="sheet-panic-desc" data-i18n-title="panic-desc" ><span data-i18n="panic-u">Panic</span></button>
                     <button type="roll" class="button-skill button-beta nopanicdesc" value="@{roll_command} &{template:alien} {{character-name=@{character_name} }} {{roll-name=Panic Roll }} {{panic-roll=[[ 1d6 + @{stress} + @{steelnerves} [ Stress ] ]] }}" name="sheet-panic" data-i18n-title="panic-desc" ><span data-i18n="panic-u">Panic</span></button>
                     <button type="roll" class="button-skill button-beta" value="@{roll_command} &{template:alien} {{character-name=@{character_name} }} {{roll-name=Initiative: *Card Value* }} {{roll-dice=[[ ?{Card Number|0} @{tokeninitiative} ]] }}" name="sheet-initiative_card" data-i18n-title="initiative-card-desc" ><span data-i18n="initiative-card-u">Initiative: Card</span></button>
-                    <button type="roll" class="button-skill button-beta" value="@{roll_command} &{template:alien} {{character-name=@{character_name} }} {{roll-name=Initiative: *Dice Roll* }} {{roll-dice=[[ @{config_initiativedice} @{tokeninitiative} ]] }}" name="sheet-initiative_dice" data-i18n-title="initiative-card-desc" ><span data-i18n="initiative-dice-u">Initiative: Dice</span></button>
+                    <button type="roll" class="button-skill button-beta" value="@{roll_command} &{template:alien} {{character-name=@{character_name} }} {{roll-name=Initiative: *Dice Roll* }} {{roll-dice=[[ @{config_initiativedice} @{tokeninitiative} + @{agility}]] }}" name="sheet-initiative_dice" data-i18n-title="initiative-card-desc" ><span data-i18n="initiative-dice-u">Initiative: Dice</span></button>
                 </div>
                 <hr class="dotted-line">
                 <div class="roll-buttons gamma-buttons">
