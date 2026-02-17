@@ -24,7 +24,7 @@ html {
     
     box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
     /* background: #adada5; */
-    background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/back.jpg");
+    background-image: url("https://raw.githubusercontent.com/karczmarzrpg/Roll20/refs/heads/main/back.jpg");
     padding: 5px;
     margin: -10px !important;
     min-width: 1530px;;
@@ -71,13 +71,14 @@ input.tab-sheet[value="Xeno"] ~ .background-wrap {
     display: grid;
     background-color: transparent;
     border-radius: 0px;
-    grid-gap: 10px;
+    grid-gap: 8px;
     padding: 10px;
     text-align: center;
 }
 
 .contains-thirteen-columns {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 50px 50px 50px 50px 50px 50px 50px 70px 50px;
 }
 
 .contains-four-columns {
@@ -315,7 +316,7 @@ div.roll-buttons + hr.dotted-line {
     border-style: solid;
     background-color: rgba(235, 232, 227, 0.8);
     border-radius: 5px;
-    padding: 16px 16px 24px;
+    padding: 8px;
     line-height: 24px;
     vertical-align: bottom;
 }
@@ -441,6 +442,9 @@ div.span-weapons .tab-weapons {
 .weapon-item.range {
     padding: 0px 20px;
 }
+.span-gear {
+    text-align: left;
+}
 .span-gear .weight,
 .weapon-item.weight {
     padding: 0px 3px;
@@ -486,7 +490,6 @@ div.span-weapons .tab-weapons {
 }
 
 .signature-item .teal-header {
-    float:right; 
     margin-right: 5px;
 }
 
@@ -622,6 +625,7 @@ textarea.auto-expand {
     max-width: 100%;
     min-width: 100%;
 	display: block;
+    height: 150px;
 	box-sizing: border-box;
 	background: transparent;
 	border-radius: 1px;
@@ -634,6 +638,7 @@ textarea.auto-expand {
 .span-personal-agenda textarea.auto-expand  {
     overflow-y: auto; 
     resize: none;
+    height: 100px;
 }
 
 .tab-container textarea.auto-expand {
@@ -763,14 +768,13 @@ div.changelog button.button-link:focus::before {
     color: black;
     font-family: 'Graduate', cursive;
     text-transform: uppercase;
-    font-size: 1em;
-    line-height: 1.75em;
+    font-size: 0.8em;
+    line-height: 1em;
     margin: 8px;
     letter-spacing: .1em;
 }
 
 .teal-header-gear-l {
-    float: left;
     color: black;
     font-family: 'Graduate', cursive;
     text-transform: uppercase;
@@ -882,7 +886,7 @@ button[type="roll"].button-skill, button[type="action"].button-skill, input[type
      margin-top: 3px;
 }
 .vertical-adjust-one {
-     margin-top: 6px;
+     /* margin-top: 6px; */
 }
 .vertical-adjust-one-more {
      margin-top: 9px;
@@ -1119,8 +1123,7 @@ input[type="number"].spinner-input:hover::-webkit-inner-spin-button {
     min-width: 100%;
     overflow-y: auto; 
     resize:none;
-/*     max-height: 65px;
-    min-height: 65px; */
+    height:65px;
 }
 textarea.xeno-textfield::-webkit-scrollbar, 
 .span-gear .vertical-adjust-one::-webkit-scrollbar,
@@ -1500,7 +1503,7 @@ div.tab-container {
 
 div.tab-container textarea {
     min-height: 50px;
-    max-height: 100px;
+    max-height: 150px;
     overflow-y: auto;
     resize: vertical;
 }
@@ -1666,6 +1669,10 @@ div.span-talents div.tab-container input.talent-roll-active:not(checked) ~ span.
     color:#b6b6b6;
     border-color: #b6b6b6;
 
+}
+
+.tinyitems .largedialog textarea {
+    height: 60px;
 }
 
 
@@ -2003,12 +2010,17 @@ input.green-box:checked + label {
     box-shadow: 0px 0px 10px #008000;
 }
 
-input.gold-box:checked + span::before,
+/* input.gold-box:checked + span::before,
 input.gold-box:checked + label {
     color: #000000;
     background: #ffd700;
     border: solid 1px #ffd700;
     box-shadow: 0px 0px 10px #ffd700;
+} */
+input.numbered-box.rad-button:checked + span::before, input.rad-button.numbered-box:checked + label {
+    background-color: rgb(10, 10, 128);
+    box-shadow: 0px 0px 10px rgb(10, 10, 128);
+    border-color: rgb(10, 10, 128);
 }
 
 input.letter-box {
